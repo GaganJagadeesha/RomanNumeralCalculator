@@ -3,5 +3,7 @@
 
 char* add(char* ori1, char* ori2);
 char* subtract(char* ori1, char* ori);
-
+void str_replace( char *, char *, char *);
+char* expand(char* strwith[],char* strrep[],char* strori);
+char* compress(char* strwith[],char* strrep[],char* strori);
 #endif
