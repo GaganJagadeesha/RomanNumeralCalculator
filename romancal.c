@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define MAX_LENGTH	4096
+#define MAX_LENGTH	10000
 #define EQUAL	0
 #define ELEVEN	11
 #define TWELVE	12
