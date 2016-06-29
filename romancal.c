@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define MAX_LENGTH	10000
+#define MAX_LENGTH	4096
 #define EQUAL	0
 #define ELEVEN	11
 #define TWELVE	12
@@ -41,5 +41,13 @@ char* add(char* ori1, char* ori2) {
 	expand(strrep,strwith,ori2); //expand the second roman number
 	strcat(ori1, ori2);	// concatenate both the numbers	
 	compress(strwith,strrep,ori1); // reduce the concatenated string to ROMAN Numeral form	
+	return ori1;
+}
+char* subtract(char* ori1, char* ori2) {
+	int n;
+	int m;
+	m = strlen(ori1);
+	n = strlen(ori2);
+	ori1[m-n]=0;
 	return ori1;
 }
