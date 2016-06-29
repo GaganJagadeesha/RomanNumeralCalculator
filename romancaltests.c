@@ -66,6 +66,12 @@ void RomanNumeralCalculatorTenMinusOne(void) {
 	char strres[] = "IX";
 	assert(strcmp(strres,subtract(str1,str2))==Equal);
  }
+void RomanNumeralCalculatorHundredMinusThirtyFive(void) {
+	char str1[MAXIMUM_LENGTH] = "C";
+	char str2[MAXIMUM_LENGTH] = "XXXV";
+	char strres[MAXIMUM_LENGTH] = "LXV";
+	assert(strcmp(strres,subtract(str1,str2))==Equal);
+ }
 int main(void) {
 	RomanNumeralCalculatorOneplusOne();
 	RomanNumeralCalculatorOneplusTwo();
@@ -77,6 +83,7 @@ int main(void) {
 	RomanNumeralCalculatorOneThousandFiveHundredplusOneThousandOneHundered();
 	RomanNumeralCalculatorThreeMinusOne();
 	RomanNumeralCalculatorTenMinusOne();
+	RomanNumeralCalculatorHundredMinusThirtyFive();
 	puts("All tests passed");
 	return 0;
  }
