@@ -23,10 +23,18 @@ void RomanNumeralCalculatorTwoplusTwo(void) {
 	char strres[] = "IV";
 	assert(strcmp(strres,add(str1,str2))==Equal);
  }
+void RomanNumeralCalculatorTwoplusNine(void) {
+	char str1[] = "II";
+	char str2[] = "IX";
+	char strres[] = "XI";
+	assert(strcmp(strres,add(str1,str2))==Equal);
+	puts(str1);
+ }
 int main(void) {
 	RomanNumeralCalculatorOneplusOne();
 	RomanNumeralCalculatorOneplusTwo();
 	RomanNumeralCalculatorTwoplusTwo();
+	RomanNumeralCalculatorTwoplusNine();
 	puts("All tests passed");
 	return 0;
  }
